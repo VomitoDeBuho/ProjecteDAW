@@ -28,7 +28,7 @@ function enviarCorreu($nom, $cognoms, $correu, $curs, $certificacions, $justific
         $mailUsuari->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mailUsuari->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mailUsuari->Username   = 'a.blazquez@sapalomera.cat';                     //SMTP username
-        $mailUsuari->Password   = 'oDIOALOSNEGROS1233';                               //SMTP password
+        $mailUsuari->Password   = 'xxxxxxxxxxxxx';                               //SMTP password
         $mailUsuari->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mailUsuari->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -57,7 +57,7 @@ function enviarCorreu($nom, $cognoms, $correu, $curs, $certificacions, $justific
         $mailAdmin->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mailAdmin->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mailAdmin->Username   = 'a.blazquez@sapalomera.cat';                     //SMTP username
-        $mailAdmin->Password   = 'oDIOALOSNEGROS1233';                               //SMTP password
+        $mailAdmin->Password   = 'xxxxxxxxxxxxxxx';                               //SMTP password
         $mailAdmin->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mailAdmin->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         //Recipients
