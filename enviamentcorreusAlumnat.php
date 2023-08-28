@@ -38,7 +38,7 @@ function enviarCorreu($nom, $cognoms, $correu, $curs, $usuari, $contrasenya, $co
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'a.blazquez@sapalomera.cat';                     //SMTP username
-        $mail->Password   = 'oDIOALOSNEGROS1233';                               //SMTP password
+        $mail->Password   = 'xxxxxxxxxxxx';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
