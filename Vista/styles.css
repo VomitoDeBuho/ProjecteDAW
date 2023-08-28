@@ -1,0 +1,218 @@
+/* Estils globals per al cos del document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horitzontalment el contingut */
+    align-items: center; /* Centra verticalment el contingut */
+    height: 100vh;
+}
+
+/* Estils per al títol */
+.titol {
+    text-align: center; /* Centra horitzontalment el contingut */
+    margin: 20px 0; /* Afegeix marge superior i inferior per a l'espai */
+}
+
+.titol h1 {
+    font-size: 24px; /* Mida de la font del títol */
+    margin: 0; /* Elimina el marge predeterminat de l'encapçalament */
+    padding: 10px; /* Afegeix una mica de farciment al voltant del títol */
+}
+
+/* Estils per al contenidor principal */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+/* Estils per al contenidor de la taula */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Estils per a la taula */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estil per al missatge de "no hi ha registres" */
+.no-records {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+/* Estils per als enllaços d'ícones de correu, guardar i editar */
+.mail-link, .save-link, .edit-icon, .search-icon {
+    vertical-align: middle; /* Alinea verticalment l'ícona a la cel·la */
+    /* Afegeix més estils segons les teves necessitats */
+}
+
+/* Estils per a la notificació */
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+}
+
+/* Estil per a la capçalera d'opcions */
+th.opcions {
+    text-align: center;
+}
+
+/* Estil per al diàleg minimalista */
+.minimal-dialog {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ajusta l'amplada segons sigui necessari */
+}
+
+/* Estil per als grups de camps */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estil per als camps d'entrada */
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box; /* Evita que l'amplada total sigui més gran degut al farciment i al vora */
+}
+
+/* Estil per als botons del contenidor */
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Estil per als botons verds */
+.green-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.green-button:hover {
+    background-color: #45a049;
+}
+
+/* Estil minimalista per al camp de cerca */
+.minimal-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.minimal-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Estil per al contenidor de la paginació */
+.pagination-container {
+    position: fixed;
+    bottom: 20px; /* Ajusta aquesta propietat segons les teves preferències */
+    left: 50%; /* Posiciona el contenidor en el centre horitzontal */
+    transform: translateX(-50%); /* Centra el contenidor horitzontalment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Canvia el color de fons si cal */
+    padding: 10px;
+    border: 1px solid #ddd; /* Afegeix un vora per a major claredat */
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Afegeix una ombra per donar profunditat */
+}
+
+/* Estil per als botons de la paginació */
+.pagination-container button {
+    margin: 0 10px; /* Espai entre els botons */
+    padding: 6px 10px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estil per a l'etiqueta textarea amb la classe "comentaris" */
+textarea.comentaris {
+    border: none; /* Amaga el vora */
+    outline: none; /* Amaga el contorn d'enfocament */
+    resize: none; /* Desactiva la capacitat de redimensionar */
+    background-color: transparent; /* Fons transparent */
+    box-shadow: none; /* Amaga l'ombra */
+    padding: 0; /* Elimina el farciment */
+    width: 100%; /* Ocupa l'amplada completa del contenidor */
+    font-family: inherit; /* Usa la font del pare */
+    font-size: inherit; /* Usa la mida de font del pare */
+    color: inherit; /* Usa el color de text del pare */
+}
+
+/* Estil per als botons de tancar sessió */
+.logout-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.logout-button {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #eee;
+}
+
